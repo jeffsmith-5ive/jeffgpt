@@ -5,13 +5,10 @@ from app.memory import ConversationMemory
 
 def main():
     console = Console()
-    console.print("[bold green]Calculator + Number Decoder[/bold green]")
-    console.print("Type a math problem to use the calculator.")
-    console.print("Type number codes to decode letters with A1Z26.")
-    console.print("Example: 8 9 / 13 25 / 14 1 13 5")
-    console.print("Press Enter for help, or type 'exit' to quit.\n")
+    console.print("[bold green]Jeff Message Printer[/bold green]")
+    console.print("Press Enter to print the message, or type 'exit' to quit.\n")
 
-    system_prompt = "You are a calculator with a number-to-letter decoder."
+    system_prompt = "You print a fixed Jeff message."
     memory = ConversationMemory(system_prompt)
     engine = ChatEngine()
 
